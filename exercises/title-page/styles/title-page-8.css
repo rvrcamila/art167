@@ -1,3 +1,11 @@
 body {
   background: palevioletred;
 }
+#table-of-contents {
+  position: fixed;
+  top:30px;
+  right:30px;
+}
+a {
+  text-decoration:none;
+}
