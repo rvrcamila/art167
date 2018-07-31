@@ -1,0 +1,12 @@
+/*body {
+  background-image: url(asphalt.jpg);
+  background-size: 150px;
+}*/
+
+body {
+  background-color:black;
+}
+img {
+  vertical-align: middle;
+  border: 20px solid;
+}
