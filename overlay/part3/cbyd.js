@@ -38,7 +38,7 @@
 
 			$(":not(.overlay-image)").css("background-color", "black");
 			$("*").css("color", "white");
-	    $("body").append('<img class ="overlay-image" style="all:unset; width:'+ size +'vw; position:fixed; left:' + x + 'vw; top:'+ y +'vh;" src="' + imageArray[i] + '" />');
+	    $("body").prepend('<img class ="overlay-image" style="all:unset; width:'+ size +'vw; position:sticky; left:' + x + 'vw; top:'+ y +'vh;" src="' + imageArray[i] + '" />');
 		})();
 	}
 })();
