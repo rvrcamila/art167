@@ -30,7 +30,7 @@
 	function initBookmarklet($) {
 		(window.bookmarklet = function() {
 			// Replace this section with your own Information Overlay script
-			var imageArray = ["https://rvrcamila.github.io/art167/overlay/part2/O18-.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-B.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-C.png", "https://rvrcamila.github.io/art167/overlay/part2/O31-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O5-.png", "https://rvrcamila.github.io/art167/overlay/part2/O4-.png"];
+			var imageArray = ["https://rvrcamila.github.io/art167/overlay/part2/O18-.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-B.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-C.png", "https://rvrcamila.github.io/art167/overlay/part2/O31-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O5-.png", "https://rvrcamila.github.io/art167/overlay/part2/O4-.png", "https://rvrcamila.github.io/art167/overlay/part2/O28-.png"];
 			var i = Math.floor(Math.random() * imageArray.length);
 			var x = Math.random() * 120 - 20;
 			var y = Math.random() * 120 - 20;
