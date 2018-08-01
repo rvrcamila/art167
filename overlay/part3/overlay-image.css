@@ -1,0 +1,18 @@
+.overlay-image-wrapper {
+  position: fixed;
+  top: 0%;
+  /*left: 50%;*/
+  min-width: 100vw;
+  text-align: center;
+  /*transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);*/
+  pointer-events: none;
+  z-index: 1000001;
+  border: 10px solid green;
+}
+
+#overlay-image {
+  max-width: 100%;
+  height: calc(100vh - 16px);
+  pointer-events: none;
+}

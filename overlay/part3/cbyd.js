@@ -32,13 +32,23 @@
 			// Replace this section with your own Information Overlay script
 			var imageArray = ["https://rvrcamila.github.io/art167/overlay/part2/O18-.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-B.png", "https://rvrcamila.github.io/art167/overlay/part2/O11-C.png", "https://rvrcamila.github.io/art167/overlay/part2/O31-A.png", "https://rvrcamila.github.io/art167/overlay/part2/O5-.png", "https://rvrcamila.github.io/art167/overlay/part2/O4-.png"];
 			var i = Math.floor(Math.random() * imageArray.length);
-			var x = Math.floor(Math.random() * 100);
-			var y = Math.floor(Math.random() * 100);
-			var size =  Math.floor(Math.random() * 20) + 10;
+			var x = Math.random() * 120 - 20;
+			var y = Math.random() * 120 - 20;
+			var size = Math.random() * 20 + 10;
 
-			$(":not(.overlay-image)").css("background-color", "black");
-			$("*").css("color", "white");
-	    $("body").append('<img class ="overlay-image" style="all:unset; width:'+ size +'vw; position:fixed; left:' + x + 'vw; top:'+ y +'vh;" src="' + imageArray[i] + '" />');
+
+			$("*").css({"background-color": "transparent", "color": "white"});
+			$(".mila-instructions").css("color", "black");
+			$("html").css("background-color", "black");
+			$("img:not(.overlay-img-mila)").css({"-webkit-filter": "grayscale(100%)", "filter": "grayscale(100%)"});
+			$("a:not([position])").css("position", "relative");
+			$("a[position=static]").css("position", "relative");
+			$("a").css("z-index", "1000000002");
+			$("a").parentsUntil("body").css("z-index", "1000000002");
+	    $("body").append('<img class ="overlay-img-mila" style="all:unset; width:'+ size +'vw; position:fixed; z-index:1000000001; left:' + x + 'vw; top:'+ y +'vh;" src="' + imageArray[i] + '" />');
+
+			/*Part 2*/
+
 		})();
 	}
 })();

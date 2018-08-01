@@ -8,5 +8,10 @@ body {
 }
 img {
   vertical-align: middle;
-  border: 20px solid;
+  /*margin: auto;*/
+  padding:100px;
+}
+
+body {
+  text-align: center;
 }
