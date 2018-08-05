@@ -11,13 +11,15 @@
     img {
       position:relative;
       vertical-align: middle;
-      padding:10px
+      padding:10px;
+      z-index: 1;
     }
     .line {
       position:fixed;
       background-color:white;
       display:inline-block;
       height: 5%;
+      z-index: 2;
     }
     #line1 {
       width: 150%;
@@ -101,6 +103,16 @@
     </style>
   </head>
   <body>
+    <div class="line" id="line1"></div>
+    <div class="line" id="line2"></div>
+    <div class="line" id="line3"></div>
+    <div class="line" id="line4"></div>
+    <div class="line" id="line5"></div>
+    <div class="line" id="line6"></div>
+    <div class="line" id="line7"></div>
+    <div class="line" id="line8"></div>
+    <a href="../part3/part3.html"><div class="line" id="line9"></div></a>
+
     <img src="o1.png" width="22%">
     <img src="o2.png" width="22%">
     <img src="o3.png" width="22%">
@@ -144,16 +156,6 @@
     <img src="O5-.png" width="35.4%">
     <img src="O4-.png" width="22%">
     <img src="O28-.png" width="22%">-->
-
-    <div class="line" id="line1"></div>
-    <div class="line" id="line2"></div>
-    <div class="line" id="line3"></div>
-    <div class="line" id="line4"></div>
-    <div class="line" id="line5"></div>
-    <div class="line" id="line6"></div>
-    <div class="line" id="line7"></div>
-    <div class="line" id="line8"></div>
-    <div class="line" id="line9"></div>
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript">
       $("div:not(.line)").css("vertical-align": "middle", "padding":"100px");
