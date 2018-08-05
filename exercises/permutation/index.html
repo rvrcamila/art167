@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>People Sitting: Permutation Workshop</title>
+	<title>People Sitting</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
   body {
@@ -19,15 +19,17 @@
   }
 
   #chair {
+		width:40%;
 		position: fixed;
 		top: 50%;
-		right: 20%;
-		/*transform: translate(-50%, -50%);*/
+		left: 50%;
+		transform: translate(-50%, -50%);
   }
   #person {
+		max-width: 25%;
     position: fixed;
 		top: 50%;
-		left: 20%;
+		left: 50%;
 		transform: translate(-50%, -50%);
   }
 
@@ -39,13 +41,14 @@
   <img id="person" src="" />
 
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+	<script src="../../jquery.min.js"></script>
 	<script>
 	$(document).ready(function() {
 		var delay = 1000 //Delay in milliseconds
 
-		var myChairArray = ["chair1.png", "chair2.jpg", "chair3.jpg", "chair4.jpg", "chair5.jpg", "chair6.jpg", "chair7.jpg", "chair8.jpg", "chair9.jpg", "chair10.jpg"];
-		var myPersonArray = ["sitting1.jpg", "sitting2.jpg", "sitting3.jpg", "sitting4.jpg", "sitting5.png", "sitting6.jpg", "sitting7.jpg", "sitting8.jpg", "sitting9.jpg", "sitting10.jpg"];
+		var myChairArray = ["chair1.png", "chair2.png", "chair3.jpg", "chair4.jpg", "chair5.jpg", "chair6.jpg", "chair7.jpg", "chair8.jpg", "chair9.jpg", "chair10.jpg"];
+		var myPersonArray = ["sitting1.png", "sitting2.png", "sitting3.png", "sitting4.png", "sitting5.png", "sitting6.png", "sitting7.png", "sitting8.png", "sitting9.png", "sitting10.png"];
 
 		var chairContainer = document.getElementById('chair'); // plain JS
 		var personContainer = document.getElementById('person');

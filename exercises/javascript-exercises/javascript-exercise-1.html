@@ -10,14 +10,22 @@
  <body>
    Content
    <!-- JavaScript goes right before the the body ends! -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+   <script src="../../jquery.min.js"></script>
 
    <script type="text/javascript">
-     // Your code goes here
-    $(document).ready(functions(){
+
+   function hello() {
+     console.log("logging");
+     alert("Hello World");
+
+};
+
+hello();
+    /*$(document).ready(functions(){
       console.log("hello jQuery");
       $('body').css('background', 'red');
-    });
+    });*/
 
    </script>
  </body>
