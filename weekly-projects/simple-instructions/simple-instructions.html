@@ -4,15 +4,78 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simple Instructions</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    * {
+      font-family: 'Raleway', sans-serif;
+      color: white;
+      position: relative;
+    }
+    body {
+      background-color: black;
+      text-align: center;
+      overflow-x: hidden;
+    }
+    img {
+      max-width: 50%;
+
+    }
+
+    a {
+      text-decoration: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      padding: 10px;
+    }
+
+    div {
+      position: absolute;
+    }
+
+    #line {
+      height: 7px;
+      width:125%;
+      background: white;
+      transform: rotate(-15deg) translate(-10%, 0);
+      z-index: -3;
+    }
+
+    #line2 {
+      height: 7px;
+      width:125%;
+      background: white;
+      transform: rotate(-5deg) translate(-10%, 250px);
+      z-index: -3;
+    }
+
+    #line3 {
+      height: 7px;
+      width:170%;
+      background: white;
+      transform: rotate(30deg) translate(-10%, 650px);
+      z-index: -3;
+    }
+
+    #line4 {
+      height: 7px;
+      width:150%;
+      background: white;
+      transform: rotate(-20deg) translate(-30%, 1300px);
+      z-index: -3;
+    }
+  </style>
   </head>
   <body>
     <h1>Instructions</h1><br>
     <a href="../../index.html"><small>Back</small></a><br>
+    <div id="line"></div>
     <img src="simple-instructions.png" alt="instructions" title="Instructions" width="1000"/>
-    <hr>
-    <h3>Result (both sides)</h3>
-    <img src="simp-inst-1.png" alt="result-a" title="Result-B" width="1000"/>
-    <hr>
+    <h1>Result (both sides)</h1>
+    <div id="line2"></div>
+    <div id="line3"></div>
+    <div id="line4"></div>
+    <img src="simp-inst-1.png" alt="result-a" title="Result-B" width="1000"/><br>
     <img src="simp-inst-2.png" alt="result-b" title="Result-B" width="1000"/>
   </body>
 </html>
