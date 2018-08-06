@@ -5,16 +5,25 @@ body {
   padding:0px;
   margin: 0px;
 }
+
 #table-of-contents {
   position: fixed;
   top:30px;
   right:30px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration:none;
   color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
 }
-
 .info {
   position: absolute;
   top:50%;
@@ -31,12 +40,6 @@ a {
   /*border: 5px solid white;*/
 }
 
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
 
 #i1 {
   border-bottom: 5px solid yellow;

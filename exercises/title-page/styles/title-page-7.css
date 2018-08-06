@@ -10,11 +10,18 @@ body {
   top:30px;
   right:30px;
 }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
 a {
   text-decoration:none;
   color: white;
+  font-family: "Times New Roman", serif;
+  font-size: 15px;
 }
-
 #info {
   text-align: center;
   position: absolute;
@@ -25,12 +32,6 @@ a {
   padding-top: 20px;
   border: 5px solid white;
   background-color: black;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 
 .line {
