@@ -7,41 +7,94 @@ body {
   font-family: 'Raleway', sans-serif;
   color: white;
   margin: 0px;
-  padding: 10px;
-  z-index: 99;
   background-color: black;
-  font-size: 15vw;
 
+}
+
+a {
+  display: none;
+  position: absolute;
+  text-decoration: none;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%. -50%);
 }
 #box {
   position: absolute;
-  top:0;
-  left:0;
-  background: yellow;
-  overflow: hidden;
-  width: 75px;
-  height: 75px;
+  top:10px;
+  left:10px;
+  width: 150px;
+  height:150px;
 }
 
 #line {
   background: white;
-  height: 75px;
-  width: 10px;
+  height: 15px;
+  width: 150px;
   position: absolute;
-  left: 50%;
-  transform: rotate(0deg);
+  top: 50%;
+  transform: translate(0, -50%) rotate(0deg);
 
 }
 
 
-@media screen and (max-width: 1250px) {
-  * {
-    font-size: 24px;
+@media screen and (max-width: 1300px) {
+  #line {
+    transform: rotate(-36deg);
   }
 }
 
+@media screen and (max-width: 1186px) {
+  #line {
+    transform: rotate(-72deg);
+  }
+}
+
+@media screen and (max-width: 1072px) {
+  #line {
+    transform: rotate(-108deg);
+  }
+}
+@media screen and (max-width: 958px) {
+  #line {
+    transform: rotate(-144deg);
+  }
+}
 @media screen and (max-width: 768px) {
-  * {
-    font-size: 12px;
+  #line {
+    transform: rotate(-180deg);
+  }
+}
+@media screen and (max-width: 844px) {
+  #line {
+    transform: rotate(-216deg);
+  }
+}
+@media screen and (max-width: 730px) {
+  #line {
+    transform: rotate(-252deg);
+  }
+}
+@media screen and (max-width: 616px) {
+  #line {
+    transform: rotate(-288deg);
+  }
+}
+@media screen and (max-width: 502px) {
+  #line {
+    transform: rotate(-324deg);
+  }
+}
+@media screen and (max-width: 388px) {
+  #line {
+    transform: rotate(-360deg);
+  }
+}
+@media screen and (max-width: 274px) {
+  a {
+    display:inline-block;
+  }
+  #line {
+    display:none;
   }
 }
