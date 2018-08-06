@@ -8,28 +8,132 @@ body {
 	width: 900px;
 	height: 556px;
 	margin: 100px auto;
-	background: white;
+	background: beige;
 	position: relative;
+	overflow: hidden;
 }
 
-/* DRAWING ONE */
 
 .object {
 	position: absolute;
 }
 
-#soccer-ball {
-  width:200px;
-  height:300px;
-  background:ghostwhite;
-  border-radius:50%
-  left:25%;
-  top:120px;
 
+#paper {
+	border-bottom: 375px solid white;
+	border-left: 105px solid transparent;
+	border-right: 185px solid transparent;
+	height: 0;
+	width: 450px;
+	transform: translate(50px, 110px) rotate(-20deg);
 }
 
+#tomato {
+	left: 270px;
+	top:165px;
+	width: 50px;
+	height: 40px;
+	background: #D01F1F;
+	border-radius: 50%;
+}
+
+#sticker {
+	left:14px;
+	top:18px;
+	width: 10px;
+	height: 5px;
+	background: white;
+	border-radius: 50%;
+	transform: rotate(20deg);
+}
+#stem {
+	left:20px;
+	top:12px;
+	width: 10px;
+	height: 8px;
+	background: brown;
+	border-radius: 50%;
+}
+#soccer-ball {
+	overflow:hidden;
+	left: 313px;
+	top:60px;
+  width:180px;
+  height:180px;
+  background:lightgray;
+  border-radius:50%;
+}
+
+#stripe {
+	left: -130px;
+	top: -20px;
+  width: 300px;
+  height: 500px;
+  border-radius: 50%;
+  box-shadow: 10px 10px 0 0 black;
+	transform: rotate(-90deg);
+}
+
+#lemon {
+	left: 260px;
+	top:195px;
+	width: 50px;
+	height: 40px;
+	background: #E6E621;
+	border-radius: 80%;
+	transform: rotate(15deg);
+}
+#pellegrino {
+	left: 465px;
+	top: 125px;
+	width: 60px;
+	height:150px;
+	transform: rotate(7deg);
+}
+
+#middle {
+	width: 60px;
+	height:150px;
+	background: green;
+	border-top-right-radius:40%;
+	border-top-left-radius:40%;
+	border-bottom-left-radius:20%;
+	border-bottom-right-radius:20%;
+	opacity: 0.65;
+}
+
+#top {
+	top: -75px;
+	left:10px;
+	border-bottom: 90px solid green;
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	height: 0;
+	width: 10px;
+}
+
+#cap {
+	top: -78px;
+	left:21px;
+	width:18px;
+	height:16px;
+	border-radius:25%;
+	background: lightblue;
+}
+
+#label {
+	top: 50px;
+	width: 50px;
+	height:60px;
+	background: lightblue;
+	border-right: 3px solid white;
+	border-top: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
+
 #orange-roll {
-  
+
 
 
 }
