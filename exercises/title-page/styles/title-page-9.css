@@ -1,6 +1,8 @@
 body {
   background: black;
   color: yellow;
+  height: 100vh;
+  margin: 0px;
 }
 html {
   overflow-y: hidden;
@@ -23,11 +25,6 @@ a {
   font-size: 15px;
 }
 
-body{
-  height: 100vh;
-  margin: 0px;
-  background: url("img/stars-bg.jpg") center center;
-}
 
 .star-wars-intro {
   width: 100%;
