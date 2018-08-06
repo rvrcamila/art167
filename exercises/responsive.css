@@ -1,3 +1,47 @@
+
 body {
-  background: coral;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  margin: 0px;
+  padding: 10px;
+  z-index: 99;
+  background-color: black;
+  font-size: 15vw;
+
+}
+#box {
+  position: absolute;
+  top:0;
+  left:0;
+  background: yellow;
+  overflow: hidden;
+  width: 75px;
+  height: 75px;
+}
+
+#line {
+  background: white;
+  height: 75px;
+  width: 10px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(0deg);
+
+}
+
+
+@media screen and (max-width: 1250px) {
+  * {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 12px;
+  }
 }
