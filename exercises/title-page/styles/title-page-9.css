@@ -2,6 +2,9 @@ body {
   background: black;
   color: yellow;
 }
+html {
+  overflow-y: hidden;
+}
 #table-of-contents {
   position: fixed;
   top:30px;
