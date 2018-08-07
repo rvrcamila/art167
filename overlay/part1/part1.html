@@ -3,10 +3,84 @@
   <head>
     <meta charset="utf-8">
     <title>Presentation</title>
+    <style>
+    body {
+      background-color: lightgray;
+      font-family: 'Raleway', sans-serif;
+      color: black;
+      overflow: scroll;
+    }
+    a {
+      text-decoration: none;
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: 15px;
+      color:black;
+    }
+    div {
+      position: absolute;
+    }
+    #canvas {
+      width:90vw;
+      height:90vh;
+      min-width:870px; /*1450px;*/
+      min-height: 456px; /*760px;*/
+
+    }
+
+    img, p {
+      position: relative;
+      display:inline;
+      vertical-align: middle;
+    }
+
+    #title {
+      display: inline;
+      top: 5%;
+      right: 10%;
+      font-size: 25px;
+    }
+
+    #d1 {
+      top: 60%;
+      left: 15%;
+    }
+    #d2 {
+      top: 30%;
+      left: 65%;
+    }
+    #d3 {
+      top: 15%;
+      left: 20%
+    }
+
+    #p1 {
+      /*min-width:300px;*/
+      width: 30%;
+    }
+    #p2 {
+      /*min-width:227px;*/
+      width: 45%;
+    }
+    #p3 {
+      /*min-width:409px;*/
+      width: 40%;
+    }
+
+    </style>
   </head>
   <body>
-    <a href="../../index.html"><small>Back</small></a>
-    <h1>Overlays Images of Yourself</h1>
-    <img src="cvs.jpg" alt="Security Camera" width="500"/>
+    <div id="canvas"><a href="../../index.html">Back</a>
+    <div id="title"><p>OVERLAYS: IMAGES OF YOURSELF</p></div>
+
+    <div id="d1"><img id="p1" src="cvs.jpg" alt="Security Camera">
+    <p id="t1">&larr;&nbsp;&nbsp;&nbsp;Store Security Cameras</p></div>
+
+    <div id="d2"><p id="t2">Skype&nbsp;&nbsp;&nbsp;&rarr;</p>
+    <img id="p2" src="skype.png" alt="Skype"></div>
+
+    <div id="d3"><p id="t3">Yale Facebook&nbsp;&nbsp;&nbsp;&rarr;</p>
+    <img id="p3" src="yalefb.png" alt="Yale Facebook"></div></div>
   </body>
 </html>

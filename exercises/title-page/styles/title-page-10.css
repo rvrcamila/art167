@@ -1,9 +1,10 @@
 body {
-  background: navy;
+  background: pink;
+  transition: all .5s ease-in;
 }
 #table-of-contents {
   position: fixed;
-  top:30px;
+  bottom:30px;
   right:30px;
 }
 ul {
@@ -17,4 +18,83 @@ a {
   color: black;
   font-family: "Times New Roman", serif;
   font-size: 15px;
+}
+p {
+  position: fixed;
+  left: 1px;
+  top: 3px;
+  font-family: monospace;
+  display: none;
+  margin:0px;
+
+}
+#one {
+  display: block;
+  font-size: 250px;
+}
+@media screen and (max-width: 1320px) {
+  #one {
+    display:none;
+  }
+  #two {
+    display:block;
+    font-size: 300px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    background: hotpink;
+  }
+  #two {
+    display:none;
+  }
+  #four {
+    display:block;
+    font-size: 112px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  body {
+    background: orchid;
+  }
+  #four {
+    display:none;
+  }
+  #six {
+    display:block;
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 660px) {
+  #six {
+    display:none;
+  }
+  #seven {
+    display:block;
+    font-size: 63px;
+  }
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    background: mediumorchid;
+  }
+  #seven {
+    display:none;
+  }
+  #nine {
+    display:block;
+    font-size: 43px;
+  }
+}
+@media screen and (max-width: 362px) {
+  #nine {
+    display:none;
+  }
+  #ten {
+    display:block;
+    font-size: 50px;
+  }
 }
